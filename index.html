@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syed Almas Uddin Razin — Case File / Business Development &amp; Esports Operations</title>
+<meta name="description" content="Syed Almas Uddin Razin — 2+ years of documented, proven experience in B2B business development and esports tournament operations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Courier+Prime:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f5edc3;
+    --paper-line:#c9c19a;
+    --paper-dark:#ece2ac;
+    --ink:#1c2a44;
+    --ink-soft:#3f4b64;
+    --red:#a5342f;
+    --gold:#8a6d28;
+    --card:#faf4d9;
+    --radius:1px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:.01ms !important; transition-duration:.01ms !important;} }
+  body{
+    margin:0;
+    background-color:var(--paper);
+    background-image:repeating-linear-gradient(
+      to bottom,
+      transparent 0px, transparent 33px,
+      var(--paper-line) 33px, var(--paper-line) 34px
+    );
+    color:var(--ink);
+    font-family:'Courier Prime', monospace;
+    font-size:15.5px;
+    line-height:1.7;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  ::selection{background:var(--red); color:var(--paper);}
+  :focus-visible{outline:2px solid var(--red); outline-offset:3px;}
+  h1,h2,h3{font-family:'Fraunces',serif; margin:0; letter-spacing:-.01em; color:var(--ink);}
+  .stamp-font{font-family:'Special Elite',monospace;}
+
+  .wrap{max-width:1080px; margin:0 auto; padding:0 32px 0 88px;}
+  @media (max-width:820px){.wrap{padding:0 24px;}}
+
+  /* red margin rule, like a legal pad */
+  .margin-rule{
+    position:fixed; top:0; bottom:0; left:64px; width:1px; background:var(--red); opacity:.55; z-index:5;
+  }
+  @media (max-width:820px){.margin-rule{display:none;}}
+
+  /* ---------- NAV / TABS ---------- */
+  header.nav{
+    position:sticky; top:0; z-index:50; background:var(--paper);
+    border-bottom:2px solid var(--ink);
+  }
+  .nav-inner{max-width:1080px; margin:0 auto; padding:18px 32px 0 88px; display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:14px;}
+  @media (max-width:820px){.nav-inner{padding:18px 24px 0;}}
+  .case-id{font-family:'Special Elite',monospace; font-size:12px; color:var(--red); letter-spacing:.05em;}
+  .tabs{display:flex; gap:4px; flex-wrap:wrap;}
+  .tabs a{
+    text-decoration:none; font-family:'Fraunces',serif; font-size:13px; font-weight:600;
+    color:var(--ink-soft); padding:10px 16px 8px; border:1px solid var(--ink); border-bottom:none;
+    background:var(--paper-dark); border-radius:6px 6px 0 0; transition:background .2s,color .2s;
+  }
+  .tabs a:hover{background:var(--card); color:var(--ink);}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:76px 0 60px; position:relative;}
+  .hero-top{display:flex; justify-content:space-between; align-items:flex-start; gap:32px; flex-wrap:wrap;}
+  .hero-label{font-family:'Special Elite',monospace; font-size:12px; color:var(--ink-soft); letter-spacing:.06em; margin-bottom:18px;}
+  h1.title{font-size:clamp(2.1rem,5.2vw,3.6rem); line-height:1.05; max-width:16ch; margin-bottom:14px;}
+  .subtitle{font-size:16px; color:var(--ink-soft); max-width:56ch; margin-bottom:8px;}
+
+  .stamp{
+    border:3px double var(--red); color:var(--red); font-family:'Special Elite',monospace;
+    font-size:13px; letter-spacing:.06em; padding:12px 18px; transform:rotate(-6deg);
+    white-space:nowrap; flex-shrink:0; text-align:center; line-height:1.5;
+    box-shadow:0 0 0 1px rgba(165,52,47,.15) inset;
+  }
+  .stamp b{display:block; font-size:17px; letter-spacing:.03em;}
+
+  .hero-actions{display:flex; gap:14px; flex-wrap:wrap; margin:32px 0 44px;}
+  .btn{
+    text-decoration:none; padding:12px 22px; font-family:'Special Elite',monospace; font-size:12.5px;
+    letter-spacing:.04em; border-radius:var(--radius); transition:transform .2s, background .2s, color .2s;
+    display:inline-block; border:1.5px solid var(--ink);
+  }
+  .btn-primary{background:var(--ink); color:var(--paper);}
+  .btn-primary:hover{transform:translateY(-2px); background:var(--red); border-color:var(--red);}
+  .btn-outline{color:var(--ink); background:transparent;}
+  .btn-outline:hover{transform:translateY(-2px); background:var(--card);}
+
+  .brief{
+    background:var(--card); border:1px solid var(--ink); padding:26px 28px; position:relative;
+    font-size:15px; max-width:760px;
+  }
+  .brief::before{
+    content:"CASE BRIEF"; position:absolute; top:-11px; left:20px; background:var(--paper);
+    padding:0 10px; font-family:'Special Elite',monospace; font-size:11px; letter-spacing:.08em; color:var(--red);
+  }
+  .brief p{margin:0 0 10px;}
+  .brief p:last-child{margin-bottom:0;}
+
+  /* ---------- SECTION SHELL ---------- */
+  section{padding:70px 0;}
+  .sec-label{font-family:'Special Elite',monospace; font-size:12px; color:var(--red); letter-spacing:.07em; margin-bottom:10px;}
+  .sec-head h2{font-size:clamp(1.5rem,3vw,2.1rem); margin-bottom:14px;}
+  .sec-head p.deck{color:var(--ink-soft); max-width:620px; margin:0 0 44px; font-size:14.5px;}
+  hr.rule{border:none; border-top:2px solid var(--ink); margin:0;}
+  hr.rule.thin{border-top:1px solid var(--paper-line);}
+
+  /* ---------- EXHIBIT (track) ---------- */
+  .exhibit-head{display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; margin-bottom:6px;}
+  .exhibit-letter{
+    font-family:'Fraunces',serif; font-weight:700; font-size:2.4rem; color:var(--red); line-height:1;
+  }
+  .exhibit-meta{font-family:'Special Elite',monospace; font-size:12px; color:var(--ink-soft);}
+
+  .metrics{display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--ink); margin:32px 0 40px;}
+  .metrics .m{padding:18px 16px; border-right:1px solid var(--ink);}
+  .metrics .m:last-child{border-right:none;}
+  .metrics .m .v{font-family:'Fraunces',serif; font-weight:700; font-size:1.5rem; color:var(--ink);}
+  .metrics .m .k{font-size:11.5px; color:var(--ink-soft); margin-top:4px; text-transform:uppercase; letter-spacing:.03em;}
+  @media (max-width:700px){.metrics{grid-template-columns:repeat(2,1fr);} .metrics .m:nth-child(2){border-right:none;}}
+
+  .entry{border-top:1px solid var(--ink); padding:26px 0;}
+  .entry:last-child{border-bottom:1px solid var(--ink);}
+  .entry-head{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:12px;}
+  .entry-head h3{font-size:1.15rem;}
+  .entry-head .stamp-font{font-size:12px; color:var(--ink-soft);}
+  .entry ul{margin:0; padding-left:20px; font-size:14.5px;}
+  .entry li{margin-bottom:8px; color:var(--ink-soft);}
+  .entry li::marker{color:var(--red);}
+
+  /* ---------- LEDGER (timeline table) ---------- */
+  .ledger{width:100%; border-collapse:collapse; font-size:13.5px;}
+  .ledger th{
+    text-align:left; font-family:'Special Elite',monospace; font-weight:400; font-size:11.5px;
+    letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft);
+    border-bottom:2px solid var(--ink); padding:10px 12px;
+  }
+  .ledger td{padding:14px 12px; border-bottom:1px solid var(--paper-line); vertical-align:top;}
+  .ledger tr:nth-child(even) td{background:rgba(140,120,50,.06);}
+  .ledger .date{font-family:'Special Elite',monospace; white-space:nowrap; color:var(--ink-soft);}
+  .ledger .track-a{color:var(--red); font-weight:700; font-family:'Fraunces',serif; font-size:12.5px;}
+  .ledger .track-b{color:var(--gold); font-weight:700; font-family:'Fraunces',serif; font-size:12.5px;}
+  .ledger-wrap{overflow-x:auto; border:1px solid var(--ink);}
+  .ledger-wrap table{min-width:640px;}
+
+  /* ---------- CERTS as seals ---------- */
+  .seal-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  @media (max-width:760px){.seal-grid{grid-template-columns:1fr;}}
+  .seal{border:1px solid var(--ink); padding:22px 20px; background:var(--card); position:relative;}
+  .seal .seal-mark{
+    position:absolute; top:14px; right:16px; width:38px; height:38px; border-radius:50%;
+    border:2px solid var(--gold); display:flex; align-items:center; justify-content:center;
+    color:var(--gold); font-family:'Special Elite',monospace; font-size:9px; text-align:center; line-height:1.1;
+    transform:rotate(8deg);
+  }
+  .seal h4{font-size:15px; margin-bottom:6px; max-width:80%;}
+  .seal p{margin:0 0 10px; color:var(--ink-soft); font-size:13px;}
+  .seal .yr{font-family:'Special Elite',monospace; font-size:11.5px; color:var(--red);}
+
+  /* ---------- SKILLS inventory ---------- */
+  .inventory{border:1px solid var(--ink);}
+  .inv-row{display:grid; grid-template-columns:180px 1fr; border-top:1px solid var(--ink);}
+  .inv-row:first-child{border-top:none;}
+  @media (max-width:640px){.inv-row{grid-template-columns:1fr;}}
+  .inv-key{
+    padding:16px 18px; font-family:'Special Elite',monospace; font-size:12px; letter-spacing:.04em;
+    color:var(--ink); background:var(--paper-dark); text-transform:uppercase;
+  }
+  .inv-val{padding:16px 18px; display:flex; flex-wrap:wrap; gap:8px;}
+  .inv-val span{font-size:13px; color:var(--ink-soft); padding:5px 10px; border:1px solid var(--paper-line); border-radius:2px;}
+
+  /* ---------- EDUCATION ---------- */
+  .edu-grid{display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--ink); border:1px solid var(--ink);}
+  @media (max-width:700px){.edu-grid{grid-template-columns:1fr;}}
+  .edu-cell{background:var(--card); padding:24px 22px;}
+  .edu-cell h4{font-size:15.5px; margin-bottom:6px;}
+  .edu-cell p{margin:0; color:var(--ink-soft); font-size:13.5px;}
+  .edu-cell .yr{font-family:'Special Elite',monospace; font-size:11.5px; color:var(--red); margin-top:8px; display:block;}
+
+  /* ---------- CONTACT ---------- */
+  footer{padding:80px 0 56px;}
+  .correspondence{border:1px solid var(--ink); background:var(--card); padding:40px; position:relative;}
+  .correspondence::before{
+    content:"CORRESPONDENCE"; position:absolute; top:-11px; left:24px; background:var(--paper);
+    padding:0 10px; font-family:'Special Elite',monospace; font-size:11px; letter-spacing:.08em; color:var(--red);
+  }
+  .correspondence h2{font-size:clamp(1.6rem,3.6vw,2.2rem); max-width:14ch; margin-bottom:22px;}
+  .clinks{display:flex; flex-direction:column; gap:12px;}
+  .clinks a{
+    text-decoration:none; display:flex; gap:14px; align-items:baseline; padding-bottom:10px;
+    border-bottom:1px dashed var(--paper-line); font-size:14.5px; color:var(--ink); transition:color .2s;
+  }
+  .clinks a:hover{color:var(--red);}
+  .clinks span.k{font-family:'Special Elite',monospace; font-size:11px; color:var(--ink-soft); text-transform:uppercase; width:80px; flex-shrink:0;}
+  .foot-note{margin-top:24px; font-size:12px; color:var(--ink-soft); font-family:'Special Elite',monospace;}
+  .foot-bottom{margin-top:40px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:12px; color:var(--ink-soft); font-family:'Special Elite',monospace;}
+
+  .reveal{opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<div class="margin-rule"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="case-id">FILE NO. 2024–ONGOING · RE: S. A. U. RAZIN</div>
+    <nav class="tabs">
+      <a href="#exhibit-a">Exhibit A</a>
+      <a href="#exhibit-b">Exhibit B</a>
+      <a href="#ledger">Ledger</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Correspondence</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <div>
+          <div class="hero-label">SUBJECT PROFILE — DHAKA, BANGLADESH</div>
+          <h1 class="title">Syed Almas Uddin Razin</h1>
+          <p class="subtitle">
+            Business Development Executive and Esports Tournament Operations Lead. Two documented
+            tracks, run concurrently since 2024 — over two years of continuous, verifiable activity
+            in outbound sales and competitive-gaming operations.
+          </p>
+        </div>
+        <div class="stamp">
+          <b>VERIFIED</b>
+          2+ YEARS ACTIVE<br>2024 — PRESENT
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Open correspondence</a>
+        <a href="#ledger" class="btn btn-outline">Review the ledger</a>
+      </div>
+
+      <div class="brief">
+        <p>
+          Since 2024 I have run two professional tracks in parallel — B2B business development
+          for tech agencies serving Bangladesh, the UK and the US, and tournament operations for
+          Honor of Kings Bangladesh under Tencent Games. Neither is a side project; both carry
+          real numbers, real deadlines and a documented record below.
+        </p>
+        <p>
+          Currently reading for an LLB at North South University alongside both. What follows is
+          the evidence, organized as it happened.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- EXHIBIT A: BUSINESS DEVELOPMENT -->
+  <section id="exhibit-a" class="reveal">
+    <div class="wrap">
+      <div class="exhibit-head">
+        <span class="exhibit-letter">A</span>
+        <div>
+          <h2 style="font-size:1.6rem;">Business Development</h2>
+          <div class="exhibit-meta">TWO CONCURRENT SEATS · FILED 2025 · STATUS: ACTIVE</div>
+        </div>
+      </div>
+      <p class="sec-head" style="max-width:640px; color:var(--ink-soft); font-size:14.5px; margin-top:14px;">
+        End-to-end client acquisition run simultaneously for two tech-sales organizations — a
+        Bangladesh-based agency and a Singapore-based agency serving the US market.
+      </p>
+
+      <div class="metrics">
+        <div class="m"><div class="v">2,000+</div><div class="k">Active leads, combined pipeline</div></div>
+        <div class="m"><div class="v">1,200+</div><div class="k">Prospects dialed daily (NSOL BPO)</div></div>
+        <div class="m"><div class="v">3</div><div class="k">Markets — Bangladesh, UK, US</div></div>
+        <div class="m"><div class="v">2+ yrs</div><div class="k">Continuous outbound operation</div></div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Business Development Executive — Start Daily</h3>
+          <span class="stamp-font">DHAKA (HYBRID) · 2025–2026</span>
+        </div>
+        <ul>
+          <li>Run high-volume outbound campaigns across LinkedIn, WhatsApp and email targeting restaurant owners, e-commerce brands, startups and SMEs in Bangladesh and the UK.</li>
+          <li>Qualify leads against ICP frameworks and manage the full pipeline from cold prospecting to booked discovery calls, sustaining 1,000–2,000 active leads.</li>
+          <li>Build and iterate multi-stage outreach sequences — connection, icebreaker, pitch, follow-up, objection handling.</li>
+          <li>Work directly with the founder on go-to-market strategy and new client verticals; produce daily LinkedIn content across three verticals.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Business Development Executive — NSOL BPO</h3>
+          <span class="stamp-font">SINGAPORE-BASED, US MARKET (REMOTE) · 2025–2026</span>
+        </div>
+        <ul>
+          <li>Run a parallel outbound motion targeting US-based prospects for virtual assistance, custom websites, mobile apps, SaaS and AI automation — dialing 1,200+ prospects daily.</li>
+          <li>Adapt messaging and objection-handling to the US buyer context, distinct from the Start Daily book of business.</li>
+          <li>Coordinate scheduling and reporting across time zones to hold a consistent follow-up cadence.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- EXHIBIT B: ESPORTS -->
+  <section id="exhibit-b" class="reveal">
+    <div class="wrap">
+      <div class="exhibit-head">
+        <span class="exhibit-letter">B</span>
+        <div>
+          <h2 style="font-size:1.6rem;">Esports Operations</h2>
+          <div class="exhibit-meta">TWO CONCURRENT SEATS · FILED 2024 · STATUS: ACTIVE</div>
+        </div>
+      </div>
+      <p class="sec-head" style="max-width:640px; color:var(--ink-soft); font-size:14.5px; margin-top:14px;">
+        Community moderation and tournament operations for Honor of Kings — the earliest-dated
+        activity on file, running continuously since 2024.
+      </p>
+
+      <div class="metrics">
+        <div class="m"><div class="v">30+</div><div class="k">Honor of Kings tournaments run</div></div>
+        <div class="m"><div class="v">120</div><div class="k">Teams — HOK CMF S. Asian Championship</div></div>
+        <div class="m"><div class="v">4</div><div class="k">Stages, approved by Honor of Kings HQ</div></div>
+        <div class="m"><div class="v">2024</div><div class="k">Year record begins</div></div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Official Community Moderator — Honor of Kings Bangladesh</h3>
+          <span class="stamp-font">TENCENT GAMES (OFFICIAL) · 2024–PRESENT</span>
+        </div>
+        <ul>
+          <li>Serve as official community moderator for one of Southeast Asia's largest mobile esports titles, managing and growing the player community across platforms.</li>
+          <li>Maintain engagement standards, resolve disputes and enforce community guidelines at scale.</li>
+          <li>Appointed League Operations Head for the eSports Nations Cup 2026 — HOK Bangladesh, overseeing league-level operations and coordination.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Marketing Manager &amp; Tournament Operations Lead</h3>
+          <span class="stamp-font">CMF ESPORTS / RG ESPORTS / ENIGMA OPS · 2025–PRESENT</span>
+        </div>
+        <ul>
+          <li>Organized the HOK CMF South Asian Championship — a 120-team, 4-stage tournament officially approved by Honor of Kings HQ and fully sponsored by CMF Official.</li>
+          <li>Completed 30+ Honor of Kings tournaments as Tournament Operations Lead: bracket management, team communications, scheduling and post-event reporting.</li>
+          <li>Produced a full documentation suite — rulebooks, tournament handbooks, KV materials and formal proposal letters to regional publishers.</li>
+          <li>Led marketing strategy across multiple organizations: social campaigns, sponsorship outreach and brand positioning.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- LEDGER -->
+  <section id="ledger" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-label">EXHIBIT C — ACTIVITY LOG</div>
+        <h2>The ledger, in order</h2>
+        <p class="deck">Every entry below is dated and drawn from the working record. Read top to bottom for a continuous two-year-plus account.</p>
+      </div>
+      <div class="ledger-wrap">
+        <table class="ledger">
+          <thead>
+            <tr><th>Date</th><th>Track</th><th>Entry</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="date">2024</td>
+              <td><span class="track-b">EXHIBIT B</span></td>
+              <td>Appointed Official Community Moderator, Honor of Kings Bangladesh, under Tencent Games — record begins.</td>
+            </tr>
+            <tr>
+              <td class="date">2024</td>
+              <td><span class="track-a">EXHIBIT A</span></td>
+              <td>Operations Specialist at Ajke (q-commerce): zone-specific Bangla content, Ramadan campaign assets, a 31-day content calendar.</td>
+            </tr>
+            <tr>
+              <td class="date">2025</td>
+              <td><span class="track-b">EXHIBIT B</span></td>
+              <td>Named Marketing Manager &amp; Tournament Operations Lead across CMF Esports, RG Esports and Enigma Ops — first of 30+ tournaments run.</td>
+            </tr>
+            <tr>
+              <td class="date">2025</td>
+              <td><span class="track-a">EXHIBIT A</span></td>
+              <td>Opened two concurrent BD seats: Start Daily (Dhaka) and NSOL BPO (Singapore-based, US market) — pipeline discipline applied to two separate books of business.</td>
+            </tr>
+            <tr>
+              <td class="date">2026</td>
+              <td><span class="track-b">EXHIBIT B</span></td>
+              <td>Organized the HOK CMF South Asian Championship — 120 teams, 4 stages, approved by Honor of Kings HQ. Appointed League Operations Head, eSports Nations Cup 2026.</td>
+            </tr>
+            <tr>
+              <td class="date">2026</td>
+              <td><span class="track-a">EXHIBIT A</span></td>
+              <td>Completed HubSpot Inbound Certification, HubSpot Inbound Sales Methodology, and the Straight Line Persuasion System (Jordan Belfort Sales School).</td>
+            </tr>
+            <tr>
+              <td class="date">2025–PRESENT</td>
+              <td>—</td>
+              <td>Reading for LLB, North South University, Dhaka — carried alongside both tracks above.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- CERTIFICATIONS as seals -->
+  <section id="certs" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-label">EXHIBIT D — CERTIFICATIONS ON FILE</div>
+        <h2>Formal training, certified</h2>
+      </div>
+      <div class="seal-grid">
+        <div class="seal">
+          <div class="seal-mark">CERT<br>2026</div>
+          <h4>HubSpot Inbound Certification</h4>
+          <p>HubSpot Academy — inbound marketing, buyer's journey, flywheel model, buyer personas.</p>
+          <div class="yr">ISSUED 2026</div>
+        </div>
+        <div class="seal">
+          <div class="seal-mark">CERT<br>2026</div>
+          <h4>Straight Line Persuasion System</h4>
+          <p>Jordan Belfort Sales School — certainty transfer, action threshold, objection handling, closing.</p>
+          <div class="yr">ISSUED 2026</div>
+        </div>
+        <div class="seal">
+          <div class="seal-mark">CERT<br>2026</div>
+          <h4>Inbound Sales Methodology</h4>
+          <p>HubSpot Academy — lead qualification, sales process, CRM fundamentals.</p>
+          <div class="yr">ISSUED 2026</div>
+        </div>
+      </div>
+
+      <div class="edu-grid" style="margin-top:40px;">
+        <div class="edu-cell">
+          <h4>Bachelor of Laws (LLB)</h4>
+          <p>North South University, Dhaka, Bangladesh</p>
+          <span class="yr">2025 – PRESENT</span>
+        </div>
+        <div class="edu-cell">
+          <h4>Higher Secondary Certificate (HSC)</h4>
+          <p>Dhaka College, Dhaka, Bangladesh — GPA 5.00 / 5.00, Science</p>
+          <span class="yr">2022 – 2023</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- SKILLS AS INVENTORY -->
+  <section class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-label">EXHIBIT E — WORKING INVENTORY</div>
+        <h2>What's on hand</h2>
+      </div>
+      <div class="inventory">
+        <div class="inv-row">
+          <div class="inv-key">Sales &amp; BD</div>
+          <div class="inv-val">
+            <span>B2B Lead Gen</span><span>Outbound Sales</span><span>Cold Outreach</span>
+            <span>Appointment Setting</span><span>Pipeline Mgmt</span><span>Prospect Qualification</span>
+            <span>Sales Copywriting</span><span>Objection Handling</span>
+          </div>
+        </div>
+        <div class="inv-row">
+          <div class="inv-key">Tools &amp; Platforms</div>
+          <div class="inv-val">
+            <span>LinkedIn Sales Nav</span><span>Linked Helper</span><span>Pipedrive</span>
+            <span>WhatsApp Business</span><span>Brevo</span><span>Google Sheets CRM</span>
+            <span>Canva</span><span>Notion</span><span>Google Workspace</span>
+          </div>
+        </div>
+        <div class="inv-row">
+          <div class="inv-key">Operations</div>
+          <div class="inv-val">
+            <span>Event Management</span><span>Tournament Ops</span><span>Community Mgmt</span>
+            <span>Content Strategy</span><span>Campaign Execution</span>
+          </div>
+        </div>
+        <div class="inv-row">
+          <div class="inv-key">Working Style</div>
+          <div class="inv-val">
+            <span>Communication</span><span>Persuasion</span><span>Resilience</span>
+            <span>Self-Management</span><span>Target-Driven</span><span>Remote Work</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- CONTACT -->
+  <footer id="contact">
+    <div class="wrap">
+      <div class="correspondence">
+        <h2>Ready to open a file together?</h2>
+        <div class="clinks">
+          <a href="mailto:almas.razin.official@gmail.com"><span class="k">Email</span> almas.razin.official@gmail.com</a>
+          <a href="tel:+8801886071978"><span class="k">Phone</span> +880 1886 071978</a>
+          <a href="https://linkedin.com/in/syed-almas-uddin-razin-22a8a7210" target="_blank" rel="noopener"><span class="k">LinkedIn</span> linkedin.com/in/syed-almas-uddin-razin-22a8a7210</a>
+          <a href="#top"><span class="k">Location</span> Dhaka, Bangladesh</a>
+        </div>
+        <div class="foot-note">ALL ENTRIES ABOVE ARE DRAWN FROM THE WORKING RÉSUMÉ ON FILE. REQUEST THE FULL DOCUMENT ON INQUIRY.</div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="year"></span> SYED ALMAS UDDIN RAZIN — FILE STATUS: ACTIVE, 2+ YEARS</span>
+        <span>EXHIBIT A · EXHIBIT B · EXHIBIT C · EXHIBIT D · EXHIBIT E</span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+      });
+    }, {threshold: 0.1});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+</script>
+
+</body>
+</html>
